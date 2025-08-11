@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    public class EmailNotificationCreator : NotificationCreator
+    public class SmsNotificationCreator : NotificationCreator
     {
-        public override INotification CreateNotification() => new EmailNotification();
+        public override INotification CreateNotification() => new SmsNotification();
     }
-
-  
 }
